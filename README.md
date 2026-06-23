@@ -1,4 +1,3 @@
-# AI-Based-Safety-Equipment-Monitoring
 # MERSAD — PPE Detection and Image Denoising System
 
 MERSAD is an industrial safety monitoring system that combines automatic image denoising with YOLOv8-based personal protective equipment (PPE) detection.
@@ -154,17 +153,18 @@ Construction-Site-Safety-PPE-Detection/
 │                       ├── best.pt
 │                       └── last.pt
 │
+├── result.png
 └── README.md
+```
 
 ## Results
 
 The system was tested on noisy industrial images containing workers with different PPE compliance conditions.
 
-The example result below shows that the application successfully generated a cleaned image and detected PPE-related classes using the trained YOLOv8 model.
+The example below shows the final output after K-Means denoising and YOLOv8 PPE detection.
 
-![MERSAD Detection Result](assets/result.png)
+![MERSAD Detection Result](result.png)
 
 The model detected compliant equipment such as hardhats and safety vests, as well as violations including `NO-Hardhat`, `NO-Mask`, and `NO-Safety Vest`.
 
 The non-compliant value represents the number of detected violation boxes rather than the number of unique workers, since one worker may have multiple PPE violations.
-
