@@ -24,6 +24,7 @@ The system supports both live camera detection and uploaded-image analysis. For 
 ## Detected Classes
 
 The trained YOLOv8 model supports the following classes:
+![MERSAD Detection Result](ppe.webp)
 
 | ID | Class |
 |---:|---|
